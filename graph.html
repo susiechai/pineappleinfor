@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function swapImage(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("data");
+	image.src = dropd.value;	
+};
+function swapImage2(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("state");
+	image.src = dropd.value;	
+};
+function swapImage3(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("reason");
+	image.src = dropd.value;	
+};
+function swapImage4(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("age");
+	image.src = dropd.value;	
+};
+function swapImage6(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("income");
+	image.src = dropd.value;	
+};
+</script>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body style="background-color:#ffff66;">
+
+<h2 style="background-color:#ffcc66;text-align:center;">Pineapple Quick Info</h2>
+
+ 
+
+<table style="width:100%">
+   
+  <tr>
+    <td rowspan='6'><img id="imageToSwap" src="pineapple.png" /></td> 
+    <td style="background-color:#ffcc66;text-align:left;">Type of Data</td>
+    <td>
+   		<select id="data" onChange="swapImage()">
+		<option value=""> </option>
+			<option value="CurrentIntake.jpg">Current Pineapple Intake</option>
+			<option value="AfterIntake.jpg">Pineapple Intake After Knowing Anti-Cancer Potential</option>
+            <option value="CurrentProduct.jpg">Current Preferred Pineapple Products</option>
+            <option value="AfterProduct.jpg">Preffered Pineapple Products After Knowing Anti-Cancer Potential</option>
+		</select>
+   </td>
+  </tr>
+  <tr>
+   
+    
+   <td style="background-color:#ffcc66;text-align:left;">Malaysia/ State</td>
+    <td>
+    <select id="state" onChange="swapImage2()">
+	<option value=""> </option>
+			<option value="Malaysia.jpg">Malaysia (Only for Malaysia)</option>
+            <option value="img_girl.jpg">Johor</option>
+            <option value="img_girl.jpg">Kedah</option>
+            <option value="img_girl.jpg">Kelantan</option>
+            <option value="img_girl.jpg">Melaka</option>
+            <option value="img_girl.jpg">Negeri Sembilan</option>
+            <option value="img_girl.jpg">Pahang</option>
+            <option value="img_girl.jpg">Pulau Pinang</option>
+            <option value="img_girl.jpg">Perak</option>
+            <option value="img_girl.jpg">Perlis</option>
+            <option value="img_girl.jpg">Selangor</option>
+            <option value="img_girl.jpg">Terengganu</option>
+            <option value="img_girl.jpg">Sabah</option>
+            <option value="img_girl.jpg">Sarawak</option>
+    </select>
+    </td>
+  </tr>
+  <tr>
+   
+   <td style="background-color:#ffcc66;text-align:left;">Reasons of Pineapple Intake: </td>
+    <td><select id="reason" onChange="swapImage3()">
+	<option value=""> </option>
+			<option value="like.jpg">like</option>
+			<option value="dislike.jpg">dislike</option>
+             
+		</select></td>
+    
+  </tr>
+  <tr>
+   
+   <td style="background-color:#ffcc66;text-align:left;">Age</td>
+    <td><select id="age" onChange="swapImage4()">
+	<option value=""> </option>
+			<option value="age.jpg">Age Distribution</option>
+			 
+             
+		</select></td>
+    
+  </tr>
+  <tr>
+   
+    <td style="background-color:#ffcc66;text-align:left;">Gender</td>
+    <td><select id="gender" onChange="swapImage5()">
+	<option value=""> </option>
+			<option value="img_girl.jpg">Gender Distribution</option>
+			 
+             
+		</select></td>
+    
+  </tr>
+  <tr>
+   
+   <td style="background-color:#ffcc66;text-align:left;">Income</td>
+    <td><select id="income" onChange="swapImage6()">
+			<option value=""> </option>
+			<option value="income.jpg">Income Distribution</option>
+			 
+             
+		</select></td>
+  </tr>
+</table>
+
+</body>
+</html>
+
